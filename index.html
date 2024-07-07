@@ -23,69 +23,10 @@
 
     <link rel="stylesheet" href="assets/styles/style.css" />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="content-loader.js"></script>
   </head>
   <body>
-    <!-- Header -->
-    <header class="bg-black text-white">
-      <div class="container py-2 mb-2">
-        <div class="flex">
-          <div class="left-side">
-            <i class="fa-solid fa-chevron-left" style="color: #ffffff"></i>
-          </div>
-          <div><p class="mb-0">WhatsApp Now (+61 432 904 474)</p></div>
-          <div class="right-side">
-            <i class="fa-solid fa-chevron-right" style="color: #ffffff"></i>
-          </div>
-        </div>
-      </div>
-    </header>
-    <!-- Navbar -->
-    <nav
-      class="navbar navbar-expand-md navbar-light anonymous-pro-regular mb-3"
-    >
-      <div class="container">
-        <a class="navbar-brand" href="#">
-          <img src="assets/images/logo.svg" style="width: 250px" />
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#collapsibleNavbar"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="collapsibleNavbar">
-          <ul class="navbar-nav">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                >Fruits & Vegetables</a
-              >
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Shop all</a></li>
-                <li><a class="dropdown-item" href="#">Fruits</a></li>
-                <li><a class="dropdown-item" href="#">Vegetables</a></li>
-                <li><a class="dropdown-item" href="#">Others</a></li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">About Us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
-            </li>
-          </ul>
-        </div>
-        <i class="fa-solid fa-magnifying-glass"></i>
-      </div>
-    </nav>
+    <div data-include="header.html"></div>
     <!-- Main Container -->
     <div class="container">
       <!-- Home Section -->
@@ -101,11 +42,16 @@
         </div>
         <div class="right-side col-12 col-md-6 border border-dark py-5 px-3">
           <p class="text-right mb-0 mx-5">Only the fresh picked for you</p>
-          <div
+          <button
             class="btn btn-dark btn-lg text-white anonymous-pro-regular mt-3"
           >
-            Shop all
-          </div>
+            <a
+              href="shop.html"
+              class="text-white link-underline link-underline-opacity-0"
+            >
+              Shop all
+            </a>
+          </button>
         </div>
       </div>
       <!-- About Us -->
@@ -202,52 +148,16 @@
           <button
             class="btn btn-dark text-white anonymous-pro-regular-italic px-5"
           >
-            View More
+            <a
+              href="shop.html"
+              class="text-white link-underline link-underline-opacity-0"
+            >
+              View More
+            </a>
           </button>
         </div>
       </center>
     </div>
-    <!-- Footer -->
-    <footer class="bg-black p-4 mt-3">
-      <div class="container">
-        <div class="row">
-          <div class="col-12 col-md-4">
-            <div class="links text-white">
-              <ul>
-                <li class="mt-5 mb-4 main-heading">Quick links</li>
-                <li class="my-3 anonymous-pro-regular">About us</li>
-                <li class="my-3 anonymous-pro-regular">contact us</li>
-                <li class="my-3 anonymous-pro-regular">Return Policy</li>
-                <li class="my-3 anonymous-pro-regular">Privacy Policy</li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-12 col-md-4 text-white">
-            <h3
-              class="main-heading mt-5 mb-4 text-justify anonymous-pro-regular"
-            >
-              Our mission
-            </h3>
-            <p class="text-justify t anonymous-pro-regular-italic">
-              We are dedicated to ensuring that every household and business has
-              access to nutritious, delicious, and affordable produce.
-            </p>
-          </div>
-          <div class="col-12 col-md-4">
-            <img class="mt-5" src="assets/images/freshvalley-white.svg" />
-          </div>
-        </div>
-        <h5 class="main-heading text-center text-white mt-5">
-          Subscribe to our emails
-        </h5>
-        <center>
-          <input
-            type="email"
-            class="form-control bg-black w-25 anonymous-pro-regular text-white"
-            placeholder="Email"
-          />
-        </center>
-      </div>
-    </footer>
+    <div data-include="footer.html"></div>
   </body>
 </html>
