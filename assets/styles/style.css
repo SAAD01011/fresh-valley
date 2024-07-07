@@ -1,0 +1,119 @@
+.anonymous-pro-regular {
+  font-family: "Anonymous Pro", monospace;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14.7px;
+}
+
+.anonymous-pro-bold {
+  font-family: "Anonymous Pro", monospace;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.anonymous-pro-regular-italic {
+  font-family: "Anonymous Pro", monospace;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.anonymous-pro {
+  font-family: "Anonymous Pro", monospace;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+}
+
+.dropdown-menu {
+  border: 2px solid black;
+  border-radius: 0px;
+}
+
+header {
+  text-align: center;
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.text-right {
+  font-size: 50px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.right-side {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.btn {
+  align-self: center;
+  border-radius: 0px;
+  padding: 15px 36px;
+}
+
+.left-side2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.btn-outline-dark {
+  padding: 10px 30px;
+}
+
+.category-card {
+  height: 438px;
+}
+
+@media screen and (max-width: 768px) {
+  .reverse-on-md {
+    flex-direction: column-reverse;
+  }
+}
+
+.cover {
+  background-color: #cccccc;
+  height: 325px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.contain {
+  background-color: #ffff;
+  height: 325px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+ul {
+  list-style: none;
+}
+
+.main-heading {
+  font-family: "Avenir Next", sans-serif;
+  font-size: 25px;
+  font-weight: 400;
+}
+
+.t {
+  font-size: 17px;
+}
+
+.form-control {
+  border-radius: 0;
+  padding: 10px 20px;
+  margin-bottom: 30px;
+}
+
+.form-control::placeholder {
+  color: white;
+  opacity: 1;
+}
