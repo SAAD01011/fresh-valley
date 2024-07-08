@@ -37,20 +37,11 @@
   text-align: center;
 }
 
-.flex {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.heading {
-  display: flex;
-  flex-direction: row;
-  font-size: 10px;
-}
-
 .d-flex {
-  gap: 20px;
+  gap: 10px;
+}
+.end {
+  justify-content: flex-end;
 }
 
 .head {
@@ -86,4 +77,11 @@ ul {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+@media screen and (max-width: 768px) {
+  .flex-adjust {
+    justify-content: flex-start;
+    margin-left: 0.5rem;
+  }
 }
